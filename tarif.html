@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/dandelion 1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tarif.css">
+    <title>Mes tarifs</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Celine RENOU</a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="decouvrir.html">Me découvrir</a></li>
+                <li><a href="presta.html">Mes prestations</a></li>
+                <li><a href="tarif.html">Mes tarifs</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="contact.html" class="action-button connect">Contactez-moi</a>
+            </div>
+            <div class="burger-menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <ul class="links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="decouvrir.html">Me découvrir</a></li>
+                <li><a href="presta.html">Mes prestations</a></li>
+                <li><a href="tarif.html">Mes tarifs</a></li>
+                <div class="divider"></div>
+                <div class="buttons-burger-menu">
+                    <a href="contact.html" class="action-button connect">Contactez-moi</a>
+                </div>
+            </ul>  
+        </div>
+    </header>
+    <section class="tarifs">
+        <div class="container">
+          <h2 class="section-title">Mes tarifs</h2>
+          <div class="tarifs-grid">
+            <div class="tarif-card">
+              <h3 class="tarif-title">Tarif horaire</h3>
+              <p class="tarif-price">18 €/heure</p>
+              <p class="tarif-description">Au domicile et/ou autour du domicile du client,<br> incluant les frais de déplacements dans la même localité.</p>
+            </div>
+            <div class="tarif-card">
+              <h3 class="tarif-title">Forfait demi journée <br>(3 heures)</h3>
+              <p class="tarif-price">50 €</p>
+              <p class="tarif-description">Du lundi au samedi.</p>
+            </div>
+            <div class="tarif-card">
+              <h3 class="tarif-title">Forfait à la journée <br>(7 heures)</h3>
+              <p class="tarif-price">110 €</p>
+              <p class="tarif-description">Du lundi au samedi.</p>
+            </div>
+            <div class="tarif-card">
+              <h3 class="tarif-title">Forfait d’une garde de nuit</h3>
+              <p class="tarif-price">120 €</p>
+              <p class="tarif-description">7/7 jours <br>(+ Maj WE).</p>
+            </div>
+          </div>
+        </div>
+        <div class="tarif-card-km">
+          <h3 class="tarif-title">Indemnités kilométriques</h3>
+          <p class="tarif-price">0.38 €/km</p>
+          <p class="tarif-description">Facturées pour tous les déplacements hors localité de résidence du client.</p>
+        </div>
+      </section>           
+    <script>
+        const burgerMenuButton = document.querySelector('.burger-menu-button')
+        const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
+        const burgerMenu = document.querySelector('.burger-menu')
+           
+        burgerMenuButton.onclick = function(){
+            burgerMenu.classList.toggle('open')
+            const isOpen = burgerMenu.classList.contains('open')
+            burgerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+    </script>
+</body>
+<footer>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <p>Téléphone : 06 71 25 52 04</p>
+          <p>Email : acc.celine.renou@gmail.com</p>
+        </div>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2024 Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+</html>

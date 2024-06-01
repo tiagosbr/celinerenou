@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/dandelion 1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>CELINE RENOU</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Celine RENOU</a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="decouvrir.html">Me découvrir</a></li>
+                <li><a href="presta.html">Mes prestations</a></li>
+                <li><a href="tarif.html">Mes tarifs</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="contact.html" class="action-button connect">Contactez-moi</a>
+            </div>
+            <div class="burger-menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <ul class="links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="decouvrir.html">Me découvrir</a></li>
+                <li><a href="presta.html">Mes prestations</a></li>
+                <li><a href="tarif.html">Mes tarfis</a></li>
+                <div class="divider"></div>
+                <div class="buttons-burger-menu">
+                    <a href="contact.html" class="action-button connect">Contactez-moi</a>
+                    </div>
+            </ul>  
+        </div>
+    </header>
+    <div class="image-text">
+        <h2>Je vous souhaite la bienvenue sur mon site internet <br>et vous remercie pour ce clic.</h2>
+        <h2><br><br><br>Je suis accompagnante à la vie sociale, une "dame de compagnie"<br> <br>Accompagnante également sur votre chemin de deuil, <br>individuellement ou collectivement.</h2>
+        <h2><br>Céline</h2>
+    </div>
+    <script>
+        const burgerMenuButton = document.querySelector(".burger-menu-button");
+        const burgerMenuButtonIcon = document.querySelector(".burger-menu-button i");
+        const burgerMenu = document.querySelector(".burger-menu");
+        const imageText = document.querySelector(".image-text"); // Ajoutez cette ligne
+      
+        burgerMenuButton.onclick = function () {
+          burgerMenu.classList.toggle("open");
+          const isOpen = burgerMenu.classList.contains("open");
+          burgerMenuButtonIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+      
+          // Ajoutez ce bloc de code
+          if (isOpen) {
+            imageText.classList.add("hide-text");
+          } else {
+            imageText.classList.remove("hide-text");
+          }
+        };
+      </script>
+</body>
+</html>
