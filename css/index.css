@@ -7,6 +7,13 @@
 h2 {
     font-family: "Papyrus", sans-serif;
 }
+
+.taille-14 {
+    font-size: 14px;
+}
+.taille-18 {
+    font-size: 18px;
+}
 body {
     height: 100vh;
     background-image: url(../img/background.jpg);
@@ -197,17 +204,35 @@ header {
 }
 
 @media (max-width: 576px) {
-    
+
     .burger-menu {
         left: 2rem;
         width: unset;
     }
+    .image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        margin-left: 0;
+      }
+}
+
+/* Ajoutez cette requête média pour cibler les écrans d'ordinateur */
+@media (min-width: 992px) {
+  .image-text {
+    margin-left: 2% !important;
+  }
 }
 
 .image-text {
     position: relative;
     padding-top: 9%;
-    margin-left: 2%;
+    margin-left: 0; /* Supprimez la marge de 2% pour les écrans de téléphone et de tablette */
 }
 
 h2 {
@@ -217,4 +242,11 @@ h2 {
 .hide-text {
     display: none;
   }
-  
+
+h2 {
+    color: #fafafa;
+}
+/* Enlevez le texte accompagnante à la vie sociale etc à l'ouverture du menu burger*/
+.hide-text {
+    display: none;
+  }
