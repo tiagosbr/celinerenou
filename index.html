@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-
     <title>CELINE RENOU</title>
 </head>
 <body>
@@ -42,28 +41,28 @@
                 <div class="buttons-burger-menu">
                     <a href="contact.html" class="action-button connect">Contactez-moi</a>
                     </div>
-            </ul>  
+            </ul>
         </div>
     </header>
     <div class="image-text">
         <h2 class="taille-14">Je vous souhaite la bienvenue sur mon site internet et vous remercie pour ce clic.</h2>
         <h2 class="taille-18"><br>"Dame de compagnie"<br>et Accompagnante sur votre chemin de deuil.</h2>
-        <h2 class="taille-14">Céline</h2>
-        <h2 class="taille-14"><u><br>« Accompagner quelqu’un, c’est se placer ni devant, ni derrière, <br>ni à la place. C’est être à côté » <br>Joseph Templier</h2></u><br>
+        <h2 class="celine-taille">Céline</h2>
+        <h2 class="soulignement1"><br>« Accompagner quelqu’un, c’est se placer ni devant, ni derrière, <br>ni à la place. C’est être à côté » <br>Joseph Templier</h2><br>
     </div>
     <script>
         const burgerMenuButton = document.querySelector(".burger-menu-button");
         const burgerMenuButtonIcon = document.querySelector(".burger-menu-button i");
         const burgerMenu = document.querySelector(".burger-menu");
         const imageText = document.querySelector(".image-text"); // Ajoutez cette ligne
-      
+
         burgerMenuButton.onclick = function () {
           burgerMenu.classList.toggle("open");
           const isOpen = burgerMenu.classList.contains("open");
           burgerMenuButtonIcon.classList = isOpen
             ? "fa-solid fa-xmark"
             : "fa-solid fa-bars";
-      
+
           // Ajoutez ce bloc de code
           if (isOpen) {
             imageText.classList.add("hide-text");

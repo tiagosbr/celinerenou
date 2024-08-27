@@ -4,16 +4,30 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 h2 {
-    font-family: "Papyrus", sans-serif;
+    font-family: "Papyrus", fantasy;
+    color: #fafafa;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 .taille-14 {
-    font-size: 14px;
+    font-family: "Papyrus", fantasy;
+    font-weight: normal;
+    
 }
+
 .taille-18 {
     font-size: 18px;
+    font-family: "Papyrus", fantasy;
+    font-weight: normal;
 }
+.soulignement1 {
+    text-decoration: underline;   
+}
+
+
 body {
     height: 100vh;
     background-image: url(../img/background.jpg);
@@ -24,6 +38,7 @@ body {
 li {
     list-style: none;
 }
+
 .logo {
     color: aqua;
 }
@@ -33,15 +48,15 @@ a {
     color: white;
     font-size: 1rem;
 }
-/*Changer la couleur d'inspecter les boutons*/
+
 a:hover {
     color: rgb(255, 140, 32);
 }
-/*Changer la couleur de la nav bar*/
+
 header {
     position: relative;
     padding: 0 2rem;
-    background-color: rgba(0, 0, 0, 0.226) ;
+    background-color: rgba(0, 0, 0, 0.226);
 }
 
 .navbar {
@@ -51,18 +66,17 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-/*Changer la couleur d'inspecter le bouton CELINE RENOU LOGO*/
+
 .navbar .logo :hover {
-    color: #fff
+    color: #fff;
 }
 
 .navbar .logo {
     flex: 1;
     display: flex;
 }
-/*Couleur du celine renou logo nav bar*/
-.navbar .logo a {
 
+.navbar .logo a {
     font-size: 1;
     font-weight: bold;
 }
@@ -74,13 +88,12 @@ header {
     gap: 2rem;
     min-width: 450px;
 }
-/*Changer la couleur du burger menu + croix*/
-.navbar .burger-menu-button {
-    color:white; 
-    font-size: 1.5rem;
-    cursor:pointer;
-    display: none;
 
+.navbar .burger-menu-button {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
 }
 
 .buttons {
@@ -104,12 +117,13 @@ header {
     color: #fff;
     border: 1px solid #fff;
 }
-/* Couleur du text contactez moi*/
+
 .connect {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
 }
+
 .connect:hover {
     background-color: #fff;
     color: #120d31;
@@ -126,8 +140,6 @@ header {
     color: #fafafa;
 }
 
-/* ----- BURGER MENU ----- */
-
 .burger-menu {
     display: none;
     height: 0;
@@ -140,7 +152,6 @@ header {
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
 }
 
 .burger-menu.open {
@@ -178,8 +189,6 @@ header {
     gap: 10px;
 }
 
-/* ------ RESPONSIVE ------ */
-
 @media (max-width: 990px) {
     header {
         background: none;
@@ -204,11 +213,11 @@ header {
 }
 
 @media (max-width: 576px) {
-
     .burger-menu {
         left: 2rem;
         width: unset;
     }
+
     .image-text {
         position: absolute;
         top: 50%;
@@ -219,34 +228,21 @@ header {
         padding: 0 1rem;
         box-sizing: border-box;
         margin-left: 0;
-      }
+    }
 }
 
-/* Ajoutez cette requête média pour cibler les écrans d'ordinateur */
 @media (min-width: 992px) {
-  .image-text {
-    margin-left: 2% !important;
-  }
+    .image-text {
+        margin-left: 2% !important;
+    }
 }
 
 .image-text {
     position: relative;
     padding-top: 9%;
-    margin-left: 0; /* Supprimez la marge de 2% pour les écrans de téléphone et de tablette */
+    margin-left: 0;
 }
 
-h2 {
-    color: #fafafa;
-}
-/* Enlevez le texte accompagnante à la vie sociale etc à l'ouverture du menu burger*/
 .hide-text {
     display: none;
-  }
-
-h2 {
-    color: #fafafa;
 }
-/* Enlevez le texte accompagnante à la vie sociale etc à l'ouverture du menu burger*/
-.hide-text {
-    display: none;
-  }
