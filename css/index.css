@@ -6,27 +6,26 @@
 }
 
 h2 {
-    font-family: "Papyrus", fantasy;
+    font-family: "Papyrus", fantasy, "Times New Roman", serif;
     color: #fafafa;
     font-weight: normal;
     font-size: 14px;
 }
 
 .taille-14 {
-    font-family: "Papyrus", fantasy;
+    font-family: "Papyrus", fantasy, "Times New Roman", serif;
     font-weight: normal;
-    
 }
 
 .taille-18 {
     font-size: 18px;
-    font-family: "Papyrus", fantasy;
+    font-family: "Papyrus", fantasy, "Times New Roman", serif;
     font-weight: normal;
 }
-.soulignement1 {
-    text-decoration: underline;   
-}
 
+.soulignement1 {
+    text-decoration: underline;
+}
 
 body {
     height: 100vh;
@@ -210,27 +209,6 @@ header {
     .burger-menu {
         display: block;
     }
-    h2 {
-        font-family: "Papyrus", fantasy;
-        color: #fafafa;
-        font-weight: normal;
-        font-size: 14px;
-    }
-    
-    .taille-14 {
-        font-family: "Papyrus", fantasy;
-        font-weight: normal;
-        
-    }
-    
-    .taille-18 {
-        font-size: 18px;
-        font-family: "Papyrus", fantasy;
-        font-weight: normal;
-    }
-    .soulignement1 {
-        text-decoration: underline;   
-    }
 }
 
 @media (max-width: 576px) {
@@ -250,53 +228,11 @@ header {
         box-sizing: border-box;
         margin-left: 0;
     }
-    h2 {
-        font-family: "Papyrus", fantasy;
-        color: #fafafa;
-        font-weight: normal;
-        font-size: 14px;
-    }
-    
-    .taille-14 {
-        font-family: "Papyrus", fantasy;
-        font-weight: normal;
-        
-    }
-    
-    .taille-18 {
-        font-size: 18px;
-        font-family: "Papyrus", fantasy;
-        font-weight: normal;
-    }
-    .soulignement1 {
-        text-decoration: underline;   
-    }
 }
 
 @media (min-width: 992px) {
     .image-text {
         margin-left: 2% !important;
-    }
-    h2 {
-        font-family: "Papyrus", fantasy;
-        color: #fafafa;
-        font-weight: normal;
-        font-size: 14px;
-    }
-    
-    .taille-14 {
-        font-family: "Papyrus", fantasy;
-        font-weight: normal;
-        
-    }
-    
-    .taille-18 {
-        font-size: 18px;
-        font-family: "Papyrus", fantasy;
-        font-weight: normal;
-    }
-    .soulignement1 {
-        text-decoration: underline;   
     }
 }
 
