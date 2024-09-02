@@ -245,3 +245,8 @@ header {
 .hide-text {
     display: none;
 }
+
+.papyrus-text {
+    font-family: "Papyrus", fantasy, "Times New Roman", serif;
+    font-weight: normal;
+}
