@@ -5,20 +5,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-@font-face {
-    font-family: 'Papyrus';
-    src: url('fonts/Papyrus.woff2') format('woff2'),
-         url('fonts/Papyrus.woff') format('woff'),
-         url('fonts/Papyrus.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.papyrus-text {
-    font-family: 'Papyrus', fantasy, "Times New Roman", serif;
-    font-weight: normal;
-}
-
 h2 {
     font-family: "Papyrus", fantasy, "Times New Roman", serif;
     color: #fafafa;
